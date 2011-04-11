@@ -16,7 +16,7 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php-channel(pear.horde.org)
-Requires:	php-pear >= 4:1.3.6-2
+Requires:	php-pear >= 4:1.3.6-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,6 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog install.log
 %{php_pear_dir}/.registry/.channel.*/*.reg
-# XXX: who owns the dir?
-%dir %{php_pear_dir}/Horde/Stream
 %{php_pear_dir}/Horde/Stream/Filter
