@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Horde_Stream_Filter
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Horde Stream filters
 Name:		php-horde-Horde_Stream_Filter
 Version:	1.1.0
